@@ -59,12 +59,12 @@ int main() {
 		
 		for (int i = 0; i < 3; i++) {		//for ever 3 incorect guesses
 
-			incorrectGuesses = 0;			//set incorrect guesses to 0
+			incorrectGuesses = 0;			//set incorrect guesses to 0 
 			srand(static_cast<unsigned int>(time(0)));		//random number
 			int choice = rand() % size;					//setting choice to random
 			string theWord = wordBank[choice][WORD];	//delcareing the word
 			string theHint = wordBank[choice][HINT];	//declaring the hint
-			string MixedWord = theWord;				//declaring mixed word
+			string MixedWord = theWord;				 //declaring mixed word
 
 			for (int j = 0; j < MixedWord.length(); j++) {		//how many letters there are
 
